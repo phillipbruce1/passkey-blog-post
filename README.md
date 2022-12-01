@@ -4,7 +4,7 @@ You may have heard of the new passkey standard being touted by big players in th
 
 ## Understanding Passwords
 
-In order to understand passkeys, we first need the context of biggest player in the current security landscape: passwords.
+In order to understand passkeys, we first need the context of the biggest player in the current security landscape: passwords.
 
 You are likely pretty familiar with what a password is by now and maybe even how it works. At it's core, a password is a string of characters that a user provides to a website or service in order to prove that they are who they say they are. Passwords are to be kept secret in order to prevent others from logging into your account without your permissions. Additionally, they are almost always used in conjunction with some form of ID; a username, email, or phone number to name some options.
 
