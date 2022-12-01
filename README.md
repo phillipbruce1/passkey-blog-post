@@ -16,6 +16,12 @@ However, there are numerous downsides to passwords to be aware of and to be solv
 
 As the FIDO Alliance (one of the primary organizations behind the passkey standard) [desperately wants you to know](https://fidoalliance.org/passkeys/), passwords are easily phished. Creating a fake website such as https://goog1e.com is incredibly easy and effective at tricking victims into entering their passwords into an attacker's website. It can be challenging - especially for the less tech-literate among us - to distinguish a real website or URL from a fake. It's a huge problem!
 
+Another big problem is data breaches. Ideally, the server would never receive the user's actual password, but instead a salted hash of the user's password. A hash is a one-way (irreversible) operation performed on a string of characters, changing it to a seemingly random, but entirely unique, different string of characters. Additionally, salt is a randomly generated string of characters to be added to the user's password in order to prevent two users with the same password to have the same hash. This would mean that a breached password database is useless to an attacker. Not only are all of the passwords unrecognizable and irreversible, but due to the salt, even two hashes of the same password cannot be recognized as coming from the same source.
 
+However, proper implementation of password storage and security is challenging and expensive. Even today, there are numerous websites and services which make the conscious decision to improperly store user passwords, leaving them vulnerable to breaches. This leads to another problem with passwords - password recycling.
 
-Ideally, the server would never receive the user's password, but instead a hash of the user's password. A hash is a one-way (irreversible) operation performed on a string of characters, changing it to a seemingly random, but entirely unique, different string of characters.
+In any other context, I would say recycling is great! However, when it comes to passwords, it is one of the worst, yet most common practices. According to a 2018 post from Panda Security, [52% of people reuse their passwords](https://www.pandasecurity.com/en/mediacenter/security/password-reuse/). Now, when one service gets breached, the attackers suddenly have access to every account that user recycled that password with. I've seen this occur firsthand several times.
+
+### Solutions to Use With Passwords
+
+2FA, password managers
